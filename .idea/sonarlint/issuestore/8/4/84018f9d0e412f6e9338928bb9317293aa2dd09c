@@ -1,0 +1,28 @@
+
+Esquid:S1068%")Remove this unused "month" private field.(Î°†£ÿÿÿÿÿ
+Dsquid:S1068%"(Remove this unused "year" private field.(Î°†£ÿÿÿÿÿ
+>squid:S1659%""Declare "year" on a separate line.(Î°†£ÿÿÿÿÿ
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(Î£¨´ùÿÿÿÿ8ä ¶Ãè-
+esquid:UnusedPrivateMethodÌ"8Remove this unused private "convertStringToDate" method.(¾‘Ûñ8õÔô¯ë-
+Zsquid:HiddenFieldCheckv"8Rename "year" which hides the field declared at line 37.(ÈÔõ¢
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ðë8õÔô¯ë-
+Ksquid:S1659 "(Declare "nextButton" on a separate line.(„·ö‚úÿÿÿÿ8Öº«Äè-
+Gsquid:S1148Ò"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8õÔô¯ë-
+ysquid:S1450$"bRemove the "MAX_CALENDAR_COLUMN" field and declare it as a local variable in the relevant methods.(­Ã £
+hsquid:HiddenFieldCheck¤"9Rename "month" which hides the field declared at line 37.(îÉëÕÿÿÿÿÿ8õÔô¯ë-
+Zsquid:S2696‡"6Make the enclosing method "static" or remove this set.(ñóïËÿÿÿÿÿ8õÔô¯ë-
+[squid:HiddenFieldCheck¥"8Rename "year" which hides the field declared at line 37.(ÈÔõ¢
+jsquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(ò×íû8õÔô¯ë-
+}squid:S2293‚"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò‚‡éøÿÿÿÿ8õÔô¯ë-
+usquid:S3008$"^Rename this field "MAX_CALENDAR_COLUMN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Ã £
+Wsquid:S1854œ"9Remove this useless assignment to local variable "sDate".(¹Žµ,8õÔô¯ë-
+jsquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(Ýê‘°8õÔô¯ë-
+Tsquid:S2696•"6Make the enclosing method "static" or remove this set.(ëî™8õÔô¯ë-
+isquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(ÍÂÜŒ8õÔô¯ë-
+gsquid:HiddenFieldChecku"9Rename "month" which hides the field declared at line 37.(îÉëÕÿÿÿÿÿ8õÔô¯ë-
+asquid:S1854º"BRemove this useless assignment to local variable "eventArrayList".(­áÕ¼8õÔô¯ë-
+Nsquid:S2696ˆ"6Make the enclosing method "static" or remove this set.(äÖÀ 
+gsquid:UnusedPrivateMethodn";Remove this unused private "setGridCellClickEvents" method.(”áØµ8õÔô¯ë-
+Hsquid:S1481œ"*Remove this unused "sDate" local variable.(¹Žµ,8õÔô¯ë-
+nsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(Ô“Ëéøÿÿÿÿ8äÓÆÄè-
+Rsquid:S1481º"3Remove this unused "eventArrayList" local variable.(­áÕ¼8õÔô¯ë-

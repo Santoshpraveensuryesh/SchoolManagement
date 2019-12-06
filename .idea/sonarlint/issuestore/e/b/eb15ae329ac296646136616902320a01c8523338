@@ -1,0 +1,9 @@
+
+esquid:UselessImportCheck":Remove this unused import 'android.content.res.Resources'.(ÿÃÜó8¿©Ö¾ê-
+osquid:UselessImportCheck"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8¿©Ö¾ê-
+^squid:UselessImportCheck"3Remove this unused import 'com.app.schoolerpapp.R'.(‰Šßë8½´Õ¾ê-
+]squid:UselessImportCheck"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8üøÔ¾ê-
+dsquid:UselessImportCheck	"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8¿©Ö¾ê-
+xsquid:UselessImportCheck"HRemove this unused import 'com.app.schoolerpapp.language.LocaleManager'.(ÿ“‰şÿÿÿÿ8½´Õ¾ê-
+psquid:UselessImportCheck"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8½´Õ¾ê-
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(õµóï

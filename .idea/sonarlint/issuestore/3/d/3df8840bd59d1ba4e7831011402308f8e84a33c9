@@ -1,0 +1,16 @@
+
+nsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ8Ã†²Æè-
+esquid:S1854d"BRemove this useless assignment to local variable "eventIndicator".(Ûıˆãıÿÿÿÿ8Ã†²Æè-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ãòó‹øÿÿÿÿ8£Ì½é-
+Ksquid:S1481f"-Remove this unused "isAttend" local variable.(†“Ÿó8†™Ñ½é-
+Zsquid:S1854"<Remove this useless assignment to local variable "isAttend".(ÓÒÃ8†™Ñ½é-
+Vsquid:S1481d"3Remove this unused "eventIndicator" local variable.(Ûıˆãıÿÿÿÿ8Ã†²Æè-
+~squid:UselessImportCheck"NRemove this unused import 'androidx.constraintlayout.widget.ConstraintLayout'.(¨‘úÿÿÿÿ8üıçÇè-
+isquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(âİÂ‰8Ã†²Æè-
+jsquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(±ğğ‹8†™Ñ½é-
+Jsquid:S1068"'Remove this unused "TAG" private field.(„¥—íúÿÿÿÿ8Ã†²Æè-
+Gsquid:S1148–"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£Ì½é-
+Rsquid:S1481="/Remove this unused "currentDay" local variable.(ñ›÷Ìûÿÿÿÿ8üŸùÇè-
+asquid:S1854=">Remove this useless assignment to local variable "currentDay".(ñ›÷Ìûÿÿÿÿ8üŸùÇè-
+nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(€¾ÁÉÿÿÿÿÿ8Ã†²Æè-
+psquid:S37763"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(•÷–á8Ã†²Æè-

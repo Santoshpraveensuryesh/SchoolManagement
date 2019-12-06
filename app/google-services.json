@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "545622643197",
+    "firebase_url": "https://schoolmanagementapp-d7a59.firebaseio.com",
+    "project_id": "schoolmanagementapp-d7a59",
+    "storage_bucket": "schoolmanagementapp-d7a59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545622643197:android:8488159980710cab6d8994",
+        "android_client_info": {
+          "package_name": "com.app.schoolerpapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545622643197-j6514pc22tkec9lh4ol4oqmctk4u7jp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.schoolerpapp",
+            "certificate_hash": "f26289efc5450ef91f065662fceddb0ae86954d7"
+          }
+        },
+        {
+          "client_id": "545622643197-4117dbbk9ut7s6gb51uesg8m1c51q6b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhCVS5VkBTGAtS8H78ksO4h9V0Y_7fiSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545622643197-4117dbbk9ut7s6gb51uesg8m1c51q6b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545622643197:android:c96b12e4da620c046d8994",
+        "android_client_info": {
+          "package_name": "com.app.schoolmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545622643197-b3llekscj1fem62uple4a5m3op0et5jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.schoolmanagement",
+            "certificate_hash": "f26289efc5450ef91f065662fceddb0ae86954d7"
+          }
+        },
+        {
+          "client_id": "545622643197-4117dbbk9ut7s6gb51uesg8m1c51q6b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhCVS5VkBTGAtS8H78ksO4h9V0Y_7fiSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545622643197-4117dbbk9ut7s6gb51uesg8m1c51q6b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

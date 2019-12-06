@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">SchoolManagement</string>
+
+    <!--Login Screen-->
+    <string name="enter_mobile">Enter Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
+    <!--Otp Screen-->
+    <string name="login">Login</string>
+    <string name="enter_otp">Enter OTP</string>
+
+    <!--Login screen-->
+    <string name="user_name">User name</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="password" translatable="false">Password</string>
+
+    <!--Dash Board-->
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout_msg">Are you sure want to Logout?</string>
+
+    <!--Student List-->
+    <string name="admission_num">Admission Number</string>
+    <string name="student_name">Student Name</string>
+
+    <!--Student Details-->
+    <string name="profile">Profile</string>
+    <string name="fees">Fees</string>
+    <string name="exam">Exam</string>
+    <string name="document">Documents</string>
+    <string name="timeline">Timeline</string>
+    <string name="roll_num">Roll Number</string>
+    <string name="class_1">Class</string>
+    <string name="section">Section</string>
+    <string name="rte">RTE</string>
+    <string name="gender">Gender</string>
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+    <string name="student_info">Student Information</string>
+
+    <!--Profile Details-->
+    <string name="admission_date">Admission Date</string>
+    <string name="date_birth">Date Of Birth</string>
+    <string name="category">Category</string>
+    <string name="mob_num">Mobile Number</string>
+    <string name="caste">Caste</string>
+    <string name="religion">Religion</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="current_address">Current Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="parent_details">Parent/Guardian Details</string>
+    <string name="father_name">Father Name</string>
+    <string name="father_phone">Father Phone</string>
+    <string name="father_occupation">Father Occupation</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="mother_phone">Mother Phone</string>
+    <string name="mother_occupation">Mother Occupation</string>
+    <string name="guardian_name">Guardian Name</string>
+    <string name="guardian_email">Guardian Email</string>
+    <string name="guardian_relation">Guardian Relation</string>
+    <string name="guardian_phone">Guardian Phone</string>
+    <string name="guardian_occupation">Guardian Occupation</string>
+    <string name="guardian_address">Guardian Address</string>
+    <string name="miscellaneous_details">Miscellaneous Details</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="student_house">Student House</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="pre_school_details">Previous School Details</string>
+    <string name="national_identy_number">National Identification Number</string>
+    <string name="local_identy_number">Local Identification Number</string>
+    <string name="account_number">Bank Account Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="attendance">Attendance</string>
+    <string name="absent">Absent</string>
+    <string name="present">Present</string>
+    <string name="late">Late</string>
+    <string name="half_day">Half Day</string>
+    <string name="holiday">Holiday</string>
+
+
+    <!--Fees Screen-->
+    <string name="fee_group">Fees Group</string>
+    <string name="fee_code">Fees Code</string>
+    <string name="due_date">Due Date</string>
+    <string name="status">Status</string>
+    <string name="amount">Amount(Rs.)</string>
+    <string name="payment_id">Payment Id</string>
+    <string name="mode">Mode</string>
+    <string name="date">Date</string>
+    <string name="discount">Discount (Rs.)</string>
+    <string name="fine">Fine (Rs.)</string>
+    <string name="paid">Paid (Rs.)</string>
+    <string name="balance">Balance (Rs.)</string>
+    <string name="paid2">Paid</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="pay">Pay</string>
+    <string name="fee_details">Fees Details</string>
+    <string name="fee_info">Fees Information</string>
+
+    <!--Exam screen-->
+    <string name="subject">Subject</string>
+    <string name="full_marks">Full Marks</string>
+    <string name="pass_marks">Passing Marks</string>
+    <string name="obtain_marks">Obtain Marks</string>
+    <string name="result">Result</string>
+    <string name="result2">Result:</string>
+    <string name="quarterly">Quarterly</string>
+    <string name="half_yearly">Half Yearly</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="percentage">Percentage</string>
+    <string name="grade">Grade</string>
+    <string name="exam_list">Exam List</string>
+
+    <!--TimeLine Screen-->
+    <string name="no_record">No Record Found</string>
+
+    <!--Teacher Screen-->
+    <string name="teacher_name">Teacher Name</string>
+    <string name="teacher_email">Email</string>
+    <string name="teacher_dob">Date Of Birth</string>
+    <string name="teacher_phone">Phone</string>
+
+    <!--Subject Screen-->
+    <string name="subject_name">Subject</string>
+    <string name="subject_type">Type</string>
+
+    <!--Library Book-->
+    <string name="book_title">Book Title</string>
+    <string name="book_subject">Subject</string>
+    <string name="book_price">Price</string>
+    <string name="post_date">Post Date</string>
+    <string name="publisher">Publisher</string>
+    <string name="author">Athuor</string>
+    <string name="rack_number">Rack Number</string>
+    <string name="qty">Qunatity</string>
+    <string name="book_details">Book Details</string>
+
+    <!--Home Work screen-->
+    <string name="home_work_date">Homework Date</string>
+    <string name="submission_date">Submission Date</string>
+    <string name="evaluation_date">Evaluation Date</string>
+    <string name="complete">Complete</string>
+
+    <!--TimTable Screen-->
+    <string name="class_time">Class Time</string>
+    <string name="class_room">Class Room</string>
+    <string name="class_timetable">Class Timetable</string>
+
+    <!--Hostel Screen-->
+    <string name="hostel_name">Hostel Name</string>
+    <string name="hostel_type">Type</string>
+    <string name="hostel_intake">Intake</string>
+
+    <!--Setting Screen-->
+    <string name="change_password">Change Password</string>
+    <string name="change_lang">Change language</string>
+    <string name="partial">Partial</string>
+    <string name="current_pass">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="lan_1">English</string>
+    <string name="lan_2">Arabic</string>
+    <string name="homework_details">Homework Details</string>
+    <string name="homework">Homework</string>
+    <string name="hostel_list">Hostel List</string>
+    <string name="library_book">Library Book</string>
+    <string name="notice_board">Notice Board</string>
+    <string name="setting">Setting</string>
+    <string name="subject_list">Subject List</string>
+    <string name="teachers">Teachers</string>
+    <string name="my_children">My Children</string>
+    <string name="download_center">Download Center</string>
+    <string name="examinations">Examinations</string>
+    <string name="subjects">Subjects</string>
+    <string name="library_books">Library Books</string>
+    <string name="hostel">Hostel</string>
+    <string name="logout">Logout</string>
+
+    <!--Attendance Screen-->
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thr">Thr</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+
+    <string name="jan">January</string>
+    <string name="feb">February</string>
+    <string name="mar">March</string>
+    <string name="apr">April</string>
+    <string name="may">May</string>
+    <string name="jun">June</string>
+    <string name="jul">July</string>
+    <string name="aug">August</string>
+    <string name="sep">September</string>
+    <string name="oct">October</string>
+    <string name="nov">November</string>
+    <string name="dec">December</string>
+
+
+
+</resources>

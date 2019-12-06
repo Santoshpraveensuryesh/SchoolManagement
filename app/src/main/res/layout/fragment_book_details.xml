@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="libraryViewModel"
+            type="com.app.schoolerpapp.viewmodel.LibraryViewModel" />
+
+        <variable
+            name="book"
+            type="com.app.schoolerpapp.model.Book" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txt_post_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post_date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_post_date"/>
+
+        <TextView
+            android:id="@+id/txt_post_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{` : `+ book.postDate}"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginRight="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_book_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:contentPadding="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_post_date"
+            app:layout_constraintStart_toStartOf="parent"
+     >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp">
+
+
+                <TextView
+                    android:id="@+id/txt_book_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_colon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.bookTitle}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_publisher2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/publisher"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_title" />
+
+                <TextView
+                    android:id="@+id/txt_colon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_title" />
+
+                <TextView
+                    android:id="@+id/txt_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.publisher}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_title"/>
+
+
+                <TextView
+                    android:id="@+id/txt_author2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_publisher" />
+
+                <TextView
+                    android:id="@+id/txt_colon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_publisher" />
+
+                <TextView
+                    android:id="@+id/txt_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.author}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon3"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_publisher"/>
+
+                <TextView
+                    android:id="@+id/txt_subject2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_subject"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_author" />
+
+                <TextView
+                    android:id="@+id/txt_colon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_author" />
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.subject}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon4"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_author"/>
+                <TextView
+                    android:id="@+id/txt_rack_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rack_number"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subject" />
+
+                <TextView
+                    android:id="@+id/txt_colon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subject" />
+
+                <TextView
+                    android:id="@+id/txt_rack_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.rackNumber}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon5"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subject"/>
+
+                <TextView
+                    android:id="@+id/txt_book_qty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_rack_num" />
+
+                <TextView
+                    android:id="@+id/txt_colon6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_rack_num" />
+
+                <TextView
+                    android:id="@+id/txt_book_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.qty}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon6"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_rack_num"/>
+
+                <TextView
+                    android:id="@+id/txt_book_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_price"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_qty" />
+
+                <TextView
+                    android:id="@+id/txt_colon7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_rack_num2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_qty" />
+
+                <TextView
+                    android:id="@+id/txt_book_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={book.bookPrice}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon7"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_book_qty"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

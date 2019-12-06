@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fee_info">"معلومات الرسوم "</string>
+
+    <string name="app_name">SchoolManagement</string>
+
+    <string name="enter_mobile"> أدخل رقم الجوال </string>
+    <string name="send_otp"> إرسال OTP </string>
+    <string name="login"> تسجيل الدخول </string>
+    <string name="enter_otp"> أدخل OTP </string>
+
+    <string name="user_name"> اسم المستخدم </string>
+
+    <string name="openDrawer"> open_drawer </string>
+    <string name="closeDrawer"> close_drawer </string>
+    <string name="yes"> نعم </string>
+    <string name="no"> لا </string>
+    <string name="logout_msg"> هل تريد بالتأكيد تسجيل الخروج؟ </string>
+
+    <string name="admission_num"> رقم القبول </string>
+    <string name="student_name"> اسم الطالب </string>
+
+    <string name="profile"> الملف الشخصي </string>
+    <string name="fees"> الرسوم </string>
+    <string name="exam"> الامتحان </string>
+    <string name="document"> المستندات </string>
+    <string name="timeline"> الجدول الزمني </string>
+    <string name="roll_num"> رقم الملف </string>
+    <string name="class_1"> الفصل </string>
+    <string name="section"> القسم </string>
+    <string name="rte"> RTE </string>
+    <string name="gender"> جنس</string>
+    <string name="pass">البشري</string>
+    <string name="fail">فشل</string>
+    <string name="student_info">بيانات الطالب</string>
+
+
+    <string name="admission_date"> تاريخ القبول </string>
+    <string name="date_birth"> تاريخ الميلاد </string>
+    <string name="category"> الفئة </string>
+    <string name="mob_num"> رقم الجوال </string>
+    <string name="caste"> الطائفة</string>
+    <string name="religion"> الدين </string>
+    <string name="email"> البريد الإلكتروني </string>
+    <string name="address"> العنوان </string>
+    <string name="current_address"> العنوان الحالي </string>
+    <string name="permanent_address"> العنوان الدائم </string>
+    <string name="parent_details"> تفاصيل الوالد / الوصي </string>
+    <string name="father_name"> اسم الأب </string>
+    <string name="father_phone"> هاتف الأب </string>
+    <string name="father_occupation"> احتلال الأب </string>
+    <string name="mother_name"> اسم الأم </string>
+    <string name="mother_phone"> هاتف الأم </string>
+    <string name="mother_occupation"> احتلال الأم </string>
+    <string name="guardian_name"> اسم الوصي </string>
+    <string name="guardian_email"> بريد Guardian الإلكتروني </string>
+    <string name="guardian_relation"> علاقة الجارديان </string>
+    <string name="guardian_phone"> هاتف Guardian </string>
+    <string name="guardian_occupation"> احتلال الجارديان </string>
+    <string name="guardian_address"> عنوان الجارديان </string>
+    <string name="miscellaneous_details"> تفاصيل متنوعة </string>
+    <string name="blood_group"> مجموعة الدم </string>
+    <string name="student_house"> بيت الطالب </string>
+    <string name="height"> الارتفاع </string>
+    <string name="weight"> الوزن </string>
+    <string name="pre_school_details"> تفاصيل المدرسة السابقة </string>
+    <string name="national_identy_number"> رقم التعريف الوطني </string>
+    <string name="local_identy_number"> رقم التعريف المحلي </string>
+    <string name="account_number"> رقم الحساب المصرفي </string>
+    <string name="bank_name"> اسم البنك </string>
+    <string name="ifsc_code"> رمز IFSC </string>
+    <string name="attendance">الحضور</string>
+    <string name = "absent"> غائب </string>
+    <string name = "present"> الحاضر </string>
+    <string name = "late"> متأخر </string>
+    <string name = "half_day"> نصف يوم </string>
+    <string name = "holiday"> عطلة </string>
+
+    <string name="fee_group"> مجموعة الرسوم </string>
+    <string name="fee_code"> رمز الرسوم </string>
+    <string name="due_date"> تاريخ الاستحقاق </string>
+    <string name="status"> الحالة </string>
+    <string name="amount"> المبلغ (روبية) </string>
+    <string name="payment_id"> معرف الدفع </string>
+    <string name="mode"> الوضع </string>
+    <string name="date"> التاريخ </string>
+    <string name="discount"> الخصم (روبية) </string>
+    <string name="fine"> غرامة (Rs.) </string>
+    <string name="paid"> مدفوع (Rs.) </string>
+    <string name="balance"> الرصيد (روبية) </string>
+    <string name="paid2"> مدفوع </string>
+    <string name="unpaid"> غير مدفوع </string>
+    <string name="pay"> الدفع </string>
+    <string name="fee_details">تفاصيل الرسوم</string>
+
+
+    <string name="subject"> الموضوع </string>
+    <string name="full_marks"> العلامات الكاملة </string>
+    <string name="pass_marks"> علامات النجاح </string>
+    <string name="obtain_marks"> الحصول على علامات </string>
+    <string name="result"> النتيجة </string>
+    <string name="result2">نتيجة:</string>
+    <string name="quarterly"> ربع سنوي </string>
+    <string name="half_yearly"> نصف سنوي </string>
+    <string name="grand_total"> المجموع الكلي </string>
+    <string name="percentage"> النسبة المئوية </string>
+    <string name="grade"> التقدير </string>
+    <string name="exam_list">قائمة الامتحانات</string>
+
+
+    <string name="no_record"> لم يتم العثور على سجل </string>
+
+    <string name="teacher_name"> اسم المعلم </string>
+    <string name="teacher_email"> البريد الإلكتروني </string>
+    <string name="teacher_dob"> تاريخ الميلاد </string>
+    <string name="teacher_phone"> الهاتف </string>
+
+    <string name="subject_name"> الموضوع </string>
+    <string name="subject_type"> النوع </string>
+
+    <string name="book_title"> عنوان الكتاب </string>
+    <string name="book_subject"> الموضوع </string>
+    <string name="book_price">السعر</string>
+    <string name="post_date"> تاريخ النشر </string>
+    <string name="publisher"> الناشر</string>
+    <string name="author"> مؤلف </string>
+    <string name="rack_number"> رقم الرف </string>
+    <string name="qty"> كمية </string>
+    <string name="book_details">تفاصيل الكتاب</string>
+
+
+    <string name="home_work_date"> تاريخ الواجب المنزلي </string>
+    <string name="submission_date"> تاريخ التقديم </string>
+    <string name="evaluation_date"> تاريخ التقييم </string>
+    <string name="complete"> مكتمل </string>
+
+    <string name="sun">شمس</string>
+    <string name="mon">الإثنين</string>
+    <string name="tue">الثلاثاء</string>
+    <string name="wed">تزوج</string>
+    <string name="thr">عبتي</string>
+    <string name="fri">الجمعة</string>
+    <string name="sat">جلسنا</string>
+
+    <string name="jan">كانون الثاني</string>
+    <string name="feb">شهر فبراير</string>
+    <string name="mar">مارس</string>
+    <string name="apr">أبريل</string>
+    <string name="may">مايو</string>
+    <string name="jun">يونيو</string>
+    <string name="jul">يوليو</string>
+    <string name="aug">أغسطس</string>
+    <string name="sep">سبتمبر</string>
+    <string name="oct">شهر اكتوبر</string>
+    <string name="nov">شهر نوفمبر</string>
+    <string name="dec">ديسمبر</string>
+
+    <string name="class_time"> وقت الفصل الدراسي </string>
+    <string name="class_room"> غرفة الصف </string>
+    <string name="class_timetable">جدول الحصص</string>
+
+
+    <string name="hostel_name"> اسم النزل </string>
+    <string name="hostel_type"> النوع </string>
+    <string name="hostel_intake"> المدخول </string>
+
+    <string name="change_password"> تغيير كلمة المرور </string>
+    <string name="change_lang"> تغيير اللغة </string>
+    <string name="partial"> جزئي </string>
+    <string name="current_pass"> كلمة المرور الحالية </string>
+    <string name="new_pass"> كلمة مرور جديدة </string>
+    <string name="confirm_pass"> تأكيد كلمة المرور </string>
+    <string name="lan_1">English</string>
+    <string name="lan_2">Arabic</string>
+    <string name="homework_details">"تفاصيل الواجب المنزلي "</string>
+    <string name="homework">"واجب منزلي "</string>
+    <string name="hostel_list">قائمة نزل</string>
+    <string name="library_book">كتاب المكتبة</string>
+    <string name="notice_board">لوح الإعلانات</string>
+    <string name="setting">ضبط</string>
+    <string name="subject_list">قائمة المواضيع</string>
+    <string name="teachers">معلمون</string>
+    <string name="my_children">أطفالي</string>
+    <string name="download_center">مركز التحميل</string>
+    <string name="examinations">الامتحانات</string>
+    <string name="subjects">المواضيع</string>
+    <string name="library_books">كتب المكتبة</string>
+    <string name="hostel">نزل</string>
+    <string name="logout">الخروج</string>
+</resources>

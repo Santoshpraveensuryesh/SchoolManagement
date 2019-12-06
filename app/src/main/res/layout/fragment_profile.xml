@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.app.schoolerpapp.model.Student" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_2sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="@dimen/_5sdp"
+                app:contentPaddingLeft="@dimen/_3sdp"
+                app:contentPaddingRight="@dimen/_3sdp"
+                app:contentPaddingTop="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_admissiondate2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/admission_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_admissiondate"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_admissiondate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.admissionDate}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_admissiondate2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_datebirth2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/date_birth"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_datebirth"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_admissiondate2" />
+
+                    <TextView
+                        android:id="@+id/txt_datebirth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.dob}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_datebirth2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_admissiondate2" />
+
+                    <TextView
+                        android:id="@+id/txt_category2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/category"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_category"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_datebirth" />
+
+                    <TextView
+                        android:id="@+id/txt_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.categoryId}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_category2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_datebirth" />
+
+                    <TextView
+                        android:id="@+id/txt_mob_num2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/mob_num"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_mob_num"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_category" />
+
+                    <TextView
+                        android:id="@+id/txt_mob_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.mobileno}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_mob_num2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_category" />
+
+                    <TextView
+                        android:id="@+id/txt_caste2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/caste"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_caste"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_mob_num" />
+
+                    <TextView
+                        android:id="@+id/txt_caste"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.cast}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_caste2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_mob_num" />
+
+                    <TextView
+                        android:id="@+id/txt_religion2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/religion"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_religion"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_caste" />
+
+                    <TextView
+                        android:id="@+id/txt_religion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.religion}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_religion2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_caste" />
+
+                    <TextView
+                        android:id="@+id/email2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/email"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/email"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_religion" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@{student.email}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/email2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_religion" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/card_top">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_light"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/address"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_current_addrs2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/current_address"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_current_addrs"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_address" />
+
+                    <TextView
+                        android:id="@+id/txt_current_addrs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.currentAddress}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_current_addrs2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_address" />
+
+                    <TextView
+                        android:id="@+id/txt_permanent_addrs2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/permanent_address"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_permanent_addrs"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_current_addrs" />
+
+                    <TextView
+                        android:id="@+id/txt_permanent_addrs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.permanentAddress}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_permanent_addrs2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_current_addrs" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_parent_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/card_address">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_parent_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_light"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/parent_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_fathername2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/father_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_fathername"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_parent_details" />
+
+                    <TextView
+                        android:id="@+id/txt_fathername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.fatherName}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fathername2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_parent_details" />
+
+                    <TextView
+                        android:id="@+id/txt_fatherphonee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/father_phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_fatherphone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fathername" />
+
+                    <TextView
+                        android:id="@+id/txt_fatherphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.fatherPhone}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fatherphonee"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fathername" />
+
+                    <TextView
+                        android:id="@+id/txt_fatheroccu2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/father_occupation"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_fatheroccu"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fatherphone" />
+
+                    <TextView
+                        android:id="@+id/txt_fatheroccu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.fatherOccupation}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fatheroccu2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fatherphone" />
+
+                    <TextView
+                        android:id="@+id/txt_mothername2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/mother_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_mothername"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fatheroccu" />
+
+                    <TextView
+                        android:id="@+id/txt_mothername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.motherName}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_mothername2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_fatheroccu" />
+
+                    <TextView
+                        android:id="@+id/txt_motherphone2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/mother_phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_motherphone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_mothername" />
+
+                    <TextView
+                        android:id="@+id/txt_motherphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.motherPhone}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_motherphone2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_mothername" />
+
+                    <TextView
+                        android:id="@+id/txt_motheroccu2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/mother_occupation"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_motheroccu"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_motherphone" />
+
+                    <TextView
+                        android:id="@+id/txt_motheroccu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.motherOccupation}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_motheroccu2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_motherphone" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianname2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_motheroccu" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianName}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianname2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_motheroccu" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianemail2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_email"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianemail"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianname" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianemail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianEmail}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianemail2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianname" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianrelation2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_relation"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianrelation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianemail" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianrelation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianRelation}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianrelation2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianemail" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianphone2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianphone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianrelation" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianPhone}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianphone2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianrelation" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianoccu2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_occupation"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianoccu"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianphone" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianoccu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianOccupation}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianoccu2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianphone" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianaddress2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/guardian_address"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_guardianaddress"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianoccu" />
+
+                    <TextView
+                        android:id="@+id/txt_guardianaddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.guardianAddress}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_guardianaddress2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_guardianoccu" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_miscellaneous_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingBottom="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/card_parent_details">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_miscellaneous"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_light"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/miscellaneous_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_bloodgroup2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/blood_group"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_bloodgroup"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_miscellaneous" />
+
+                    <TextView
+                        android:id="@+id/txt_bloodgroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.bloodGroup}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_bloodgroup2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_miscellaneous" />
+
+                    <TextView
+                        android:id="@+id/txt_studenthouse2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/student_house"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_studenthouse"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bloodgroup" />
+
+                    <TextView
+                        android:id="@+id/txt_studenthouse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.schoolHouseId}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_studenthouse2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bloodgroup" />
+
+                    <TextView
+                        android:id="@+id/txt_height2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/height"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_height"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_studenthouse" />
+
+                    <TextView
+                        android:id="@+id/txt_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.height}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_height2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_studenthouse" />
+
+                    <TextView
+                        android:id="@+id/txt_weight2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/weight"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_weight"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_height" />
+
+                    <TextView
+                        android:id="@+id/txt_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.weight}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_weight2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_height" />
+
+                    <TextView
+                        android:id="@+id/txt_preschool2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/pre_school_details"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_preschool"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_weight" />
+
+                    <TextView
+                        android:id="@+id/txt_preschool"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.previousSchool}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_preschool2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_weight" />
+
+                    <TextView
+                        android:id="@+id/txt_n_identynum2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/national_identy_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_n_identynum"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_preschool" />
+
+                    <TextView
+                        android:id="@+id/txt_n_identynum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.adharNo}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_n_identynum2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_preschool" />
+
+                    <TextView
+                        android:id="@+id/txt_l_identynum2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/local_identy_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_l_identynum"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_n_identynum2" />
+
+                    <TextView
+                        android:id="@+id/txt_l_identynum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.samagraId}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_l_identynum2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_n_identynum2" />
+
+                    <TextView
+                        android:id="@+id/txt_bank_account2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/account_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_bank_account"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_l_identynum2" />
+
+                    <TextView
+                        android:id="@+id/txt_bank_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.bankAccountNo}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_bank_account2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_l_identynum2" />
+
+                    <TextView
+                        android:id="@+id/txt_bankname2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/bank_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_bankname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bank_account" />
+
+                    <TextView
+                        android:id="@+id/txt_bankname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.bankName}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_bankname2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bank_account" />
+
+                    <TextView
+                        android:id="@+id/txt_ifsc2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/ifsc_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toStartOf="@+id/txt_ifsc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bankname" />
+
+                    <TextView
+                        android:id="@+id/txt_ifsc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:padding="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@{student.ifscCode}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_ifsc2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_bankname" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

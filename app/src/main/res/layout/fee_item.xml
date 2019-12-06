@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fees"
+            type="com.app.schoolerpapp.model.Fees" />
+
+        <variable
+            name="studentViewModel"
+            type="com.app.schoolerpapp.viewmodel.StudentViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="@dimen/_8ssp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="@dimen/_5sdp"
+            app:contentPaddingLeft="@dimen/_3sdp"
+            app:contentPaddingRight="@dimen/_3sdp"
+            app:contentPaddingTop="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_due_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/due_date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_status"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{` : `+ fees.dueDate}"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_due_date2"
+                    app:layout_constraintTop_toTopOf="@+id/btn_status"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_status"
+                    />
+                <TextView
+                    android:id="@+id/txt_colon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_status"
+                    app:layout_constraintStart_toEndOf="@+id/txt_status2"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:background="@drawable/round_view"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_status"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon4"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="@string/pay"
+                    android:textSize="@dimen/_10ssp"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@drawable/round_view"
+                    android:backgroundTint="@color/black"
+                    android:drawableStart="@drawable/fees"
+                    android:drawableTint="@android:color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cons_fee_grp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_status">
+
+                    <TextView
+                        android:id="@+id/txt_fee_group2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fee_group"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_colon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fee_group2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_fee_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={fees.name}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_12ssp"
+                        android:lines="1"
+                        app:layout_constraintStart_toEndOf="@+id/txt_colon1"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cons_fee_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cons_fee_ammount"
+                    app:layout_constraintTop_toBottomOf="@+id/cons_fee_grp">
+
+                    <TextView
+                        android:id="@+id/txt_fee_code2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fee_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_colon2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fee_code2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_fee_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@={fees.code}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_12ssp"
+                        android:lines="1"
+                        app:layout_constraintStart_toEndOf="@+id/txt_colon2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cons_fee_ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@+id/cons_fee_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cons_fee_grp">
+
+                    <TextView
+                        android:id="@+id/txt_fee_amount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_colon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" : "
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/txt_fee_amount2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_fee_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@={fees.amount}"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_12ssp"
+                        android:lines="1"
+                        app:layout_constraintStart_toEndOf="@+id/txt_colon3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

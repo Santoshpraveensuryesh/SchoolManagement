@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="userDataViewModel"
+            type="com.app.schoolerpapp.viewmodel.UserDataViewModel" />
+
+        <variable
+            name="userData"
+            type="com.app.schoolerpapp.model.UserData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:contentPadding="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/txt_mob"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                    android:text="@{userData.mobile}"-->
+                <!--                    android:textColor="@android:color/black"-->
+                <!--                    android:textSize="@dimen/_14ssp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="@+id/btn_chnge_pass"-->
+                <!--                    app:layout_constraintEnd_toStartOf="@+id/btn_chnge_pass"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/btn_chnge_pass"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/half_square_view_theme"-->
+                <!--                    android:paddingLeft="@dimen/_10sdp"-->
+                <!--                    android:paddingTop="@dimen/_7sdp"-->
+                <!--                    android:paddingRight="@dimen/_10sdp"-->
+                <!--                    android:paddingBottom="@dimen/_5sdp"-->
+                <!--                    android:text="Change password"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="@dimen/_12ssp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                <View-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_1sdp"-->
+                <!--                    android:background="@color/colorAccent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/btn_chnge_pass" />-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_chnge_language"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_chnge_language"
+                    app:layout_constraintRight_toLeftOf="@+id/btn_chnge_language"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:gravity="start"
+                        android:text="@={userData.language}"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/btn_chnge_language"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/half_square_view_theme"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/change_lang"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorAccent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_chnge_language" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

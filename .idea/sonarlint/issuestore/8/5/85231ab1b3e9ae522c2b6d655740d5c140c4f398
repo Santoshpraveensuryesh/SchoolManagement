@@ -1,0 +1,8 @@
+
+jkotlin:S3776M"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(î´÷÷
+nkotlin:S1177"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(ŒžÒ×øÿÿÿÿ
+nkotlin:S117,"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(ŸÛ…Ìûÿÿÿÿ
+ukotlin:S100M"^Rename function "getRealPathFromURI_API19" to match the regular expression ^[a-z][a-zA-Z0-9]*$(î´÷÷
+~kotlin:S100$"bRename function "getRealPathFromURI_API11to18" to match the regular expression ^[a-z][a-zA-Z0-9]*$(Ñ àÈýÿÿÿÿ
+zkotlin:S1004"cRename function "getRealPathFromURI_BelowAPI11" to match the regular expression ^[a-z][a-zA-Z0-9]*$(Õ®¿ˆ
+Ikotlin:S1135]"2Complete the task associated to this TODO comment.(›½Ÿ2

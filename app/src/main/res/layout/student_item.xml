@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.app.schoolerpapp.model.Student" />
+
+        <variable
+            name="studentViewModel"
+            type="com.app.schoolerpapp.viewmodel.StudentViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{()-> studentViewModel.showStudentDetails(student)}"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_8ssp"
+            app:cardUseCompatPadding="true"
+            app:contentPaddingBottom="@dimen/_5sdp"
+            app:contentPaddingTop="@dimen/_5sdp"
+            app:contentPaddingLeft="@dimen/_3sdp"
+            app:contentPaddingRight="@dimen/_3sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_stu_admissinno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admission_num"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_colon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_stu_admissinno2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_stu_admissinno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@={student.admissionNum}"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_stu_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_stu_admissinno" />
+
+                <TextView
+                    android:id="@+id/txt_colon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_stu_name2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_stu_admissinno" />
+
+                <TextView
+                    android:id="@+id/txt_stu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@={student.studentName}"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_colon2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_stu_admissinno" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
